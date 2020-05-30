@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">周末去哪儿</div>
     <ul>
-        <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <div class="item-img-wrapper">
                 <img class="item-img" :src='item.imgUrl' />
                 </div>
@@ -18,9 +18,12 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
+      /* recommendList: [{
         id: '0001',
         imgUrl: require('@/assets/2.jpg'),
         title: '这是Sakura喜欢的东西?',
@@ -35,7 +38,7 @@ export default {
         imgUrl: require('@/assets/3.jpg'),
         title: '这是Sakura喜欢的东西',
         desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }]
+      }] */
     }
   }
 }
@@ -49,7 +52,6 @@ export default {
     margin-top: .2rem;
 }
 .title{
-    margin-top: .2rem;
     line-height: .8rem;
     background: #eee;
     text-indent: .2rem;
@@ -57,7 +59,7 @@ export default {
 .item-img-wrapper{
     overflow: hidden;
     height: 0;
-    padding-bottom: 35.9%;
+    padding-bottom: 37.02%;
 }
 .item-img{
     width: 100%;
@@ -76,12 +78,12 @@ export default {
     font-size: 13px;
     margin-top: 4px;
     line-height: 15px;
-    color: #ccc;
+    color: rgb(17, 49, 231);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    background: red;
+    background:  rgb(6, 176, 243);
 }
 
 </style>

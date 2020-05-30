@@ -16,61 +16,18 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      iconList: [
-        {
-          id: '0001',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0004',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0005',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0006',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0007',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0008',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        },
-        {
-          id: '0009',
-          imgUrl: 'https://picbed.qunarzz.com/f5e5770393d759578962e53ee67798c8.png',
-          desc: '景点'
-        }
-      ]
+      iconList: []
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

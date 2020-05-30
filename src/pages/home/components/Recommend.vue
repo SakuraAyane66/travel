@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-        <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <img class="item-img" :src='item.imgUrl' />
             <div class="item-info">
               <p class="item-title">{{item.title}}</p>
@@ -17,9 +17,12 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
+      /*  recommendList: [{
         id: '0001',
         imgUrl: 'http://www.skydragon.vip/img/1.png',
         title: '这是Sakura喜欢的东西?',
@@ -34,7 +37,7 @@ export default {
         imgUrl: 'http://www.skydragon.vip/img/1.png',
         title: '这是Sakura喜欢的东西',
         desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }]
+      }] */
     }
   }
 }
@@ -71,23 +74,23 @@ export default {
 .item-title{
     margin-top: .50rem;
     line-height: .56rem;
-    font-size: .8rem;
+    font-size: 1.1rem;
     text-overflow:ellipsis;
     white-space: nowrap;
 }
 .item-desc{
-    font-size: 13px;
-    margin-top: 4px;
+    font-size: 15px;
+    margin-top: 6px;
     line-height: 15px;
-    color: #ccc;
+    color: rgb(14, 0, 0);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    background: red;
+    background: #87CEEB;
 }
 .item-button{
-    margin-top: .4rem;
+    margin-top: .3rem;
     margin-left: .2rem;
     line-height: .8rem;
     background: #ff9300;
