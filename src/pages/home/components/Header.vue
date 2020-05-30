@@ -4,13 +4,15 @@
       <span class="iconfont">&#xe744;</span>
   </div>
   <div class="header-input">
-      <span class="iconfont">&#xe753;</span>
+      <!-- <span class="iconfont">&#xe753;</span> -->
       输入城市/景点/游玩主体
       </div>
+  <router-link to="/city">
   <div class="header-right">
     {{this.city}}
-    <span class="iconfont">&#xe74e;</span>
-    </div>
+    <div class="iconfont">&#xe74e;</div>
+  </div>
+  </router-link>
 </div>
 </template>
 
@@ -24,17 +26,20 @@ export default {
 </script>
 
 <style scoped>
+  .iconfont{
+    font-size: 2rem;
+    color: black;
+  }
   .header{
     line-height: 40px;
     display: flex;
     background-color: aqua;
-    font-size: 10px;
+    font-size: 15px;
     }
   .header-left{
-    width: 60px;
+    width: 30px;
     display: flex;
     float: left;
-    background-color: red;
     }
   .header-input{
     flex: 1;
@@ -43,14 +48,15 @@ export default {
     line-height: 30px;
     margin-top: 5px;
     border-radius: 5px;
-    margin-left: 12px;
+    margin-left: 8px;
+    text-align: center;
     color: #ccc;
     }
   .header-right{
-    width: 100px;
+    color: black;
+    width: 80px;
     display: flex;
-    float: right;
-    background-color: red;
+    margin-left: 5px;
     text-align: center;
     }
 </style>
