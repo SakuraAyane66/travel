@@ -21,7 +21,7 @@ export default {
     line-height: 3rem;
     text-align: center;
     color: #fff;
-    background: crimson;
+    background: aqua;
   }
   .header-back{
     top: 0;

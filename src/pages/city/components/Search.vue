@@ -12,15 +12,15 @@ export default {
 
 <style scoped>
   .search{
-    height: 2rem;
+    height: 2.2rem;
     background: aqua;
     padding: 0.1rem;
   }
   .search-input{
-    padding:0 .1rem;
-    height: 1.2rem;
+    padding:2px .1rem;
+    height: 1.4rem;
     text-align: center;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
     width: 98%;
     border-radius: .06rem;
     color: #666;
