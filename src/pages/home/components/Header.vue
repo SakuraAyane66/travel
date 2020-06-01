@@ -1,7 +1,7 @@
 <template>
 <div class="header">
   <div class="header-left">
-      <span class="iconfont">&#xe744;</span>
+      <div class="iconfont back-icon">&#xe744;</div>
   </div>
   <div class="header-input">
       <!-- <span class="iconfont">&#xe753;</span> -->
@@ -9,24 +9,31 @@
       </div>
   <router-link to="/city">
   <div class="header-right">
+    <!-- {{this.$store.state.city}} -->
     {{this.city}}
-    <div class="iconfont">&#xe74e;</div>
+    <span class="iconfont">&#xe74e;</span>
   </div>
   </router-link>
 </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
 
 <style scoped>
   .iconfont{
+    font-size: 1rem;
+    color: black;
+  }
+  .back-icon{
+    text-align: center;
     font-size: 2rem;
     color: black;
   }
@@ -53,10 +60,10 @@ export default {
     color: #ccc;
     }
   .header-right{
+    float: right;
     color: black;
-    width: 80px;
-    display: flex;
-    margin-left: 5px;
-    text-align: center;
+    min-width: 3rem;
+    padding: 0 .1rem;
+    text-align: right;
     }
 </style>
