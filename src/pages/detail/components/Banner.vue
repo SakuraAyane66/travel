@@ -31,10 +31,23 @@ export default {
   .banner-info {
    display: flex;
    position: absolute;
-   background: chartreuse;
+   color: black;
+   background-image: linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.8));
    left: 0;
    right: 0;
    bottom: 0;
-   line-height: .6rem;
+   line-height: 1rem;
+  }
+  .banner-title {
+   font-size: 1rem;
+   padding:0 1rem;
+   flex: 1;
+  }
+  .banner-number {
+    padding: 0 .4rem;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: .2rem;
+    background: aqua;
   }
 </style>
