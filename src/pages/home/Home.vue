@@ -58,7 +58,7 @@ export default {
   },
   mounted () {
     this.lastCity = this.city
-    console.log('mounted')
+    /* console.log('mounted') */
     this.getHomeInfo()
   },
   activated () {
@@ -66,7 +66,7 @@ export default {
       this.lastCity = this.city
       this.getHomeInfo()
     }
-    console.log('activited')
+    /* console.log('activited') */
   }
 }
 </script>
