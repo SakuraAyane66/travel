@@ -21,26 +21,6 @@ export default {
   name: 'HomeRecommend',
   props: {
     list: Array
-  },
-  data () {
-    return {
-      /*  recommendList: [{
-        id: '0001',
-        imgUrl: 'http://www.skydragon.vip/img/1.png',
-        title: '这是Sakura喜欢的东西?',
-        desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }, {
-        id: '0002',
-        imgUrl: 'http://www.skydragon.vip/img/1.png',
-        title: '这是Sakura喜欢的东西',
-        desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }, {
-        id: '0003',
-        imgUrl: 'http://www.skydragon.vip/img/1.png',
-        title: '这是Sakura喜欢的东西',
-        desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }] */
-    }
   }
 }
 </script>
@@ -74,7 +54,7 @@ export default {
     padding: .1rem;
 }
 .item-title{
-    margin-top: .50rem;
+    margin-top: .8rem;
     line-height: .56rem;
     font-size: 1.1rem;
     text-overflow:ellipsis;
@@ -92,7 +72,7 @@ export default {
     background: #87CEEB;
 }
 .item-button{
-    margin-top: .3rem;
+    margin-top: .4rem;
     margin-left: .2rem;
     line-height: .8rem;
     background: #ff9300;

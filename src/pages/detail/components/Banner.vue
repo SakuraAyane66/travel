@@ -51,7 +51,6 @@ export default {
     position: relative;
     overflow: hidden;
     height: 0;
-    background: coral;
     padding-bottom: 50%;
   }
   .banner-img {

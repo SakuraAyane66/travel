@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">-->
-    <keep-alive exclude="Detail">
+    <keep-alive exclude="Detail"><!--缓存，去除Detail-->
       <router-view/><!--显示的是当前路由地址对应的内容-->
     </keep-alive>
   </div>
@@ -14,12 +13,5 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+
 </style>

@@ -20,26 +20,6 @@ export default {
   name: 'HomeWeekend',
   props: {
     list: Array
-  },
-  data () {
-    return {
-      /* recommendList: [{
-        id: '0001',
-        imgUrl: require('@/assets/2.jpg'),
-        title: '这是Sakura喜欢的东西?',
-        desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }, {
-        id: '0002',
-        imgUrl: require('@/assets/2.jpg'),
-        title: '这是Sakura喜欢的东西',
-        desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }, {
-        id: '0003',
-        imgUrl: require('@/assets/3.jpg'),
-        title: '这是Sakura喜欢的东西',
-        desc: '这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢这就是传说中的vue开发么真是够ganbade的呢'
-      }] */
-    }
   }
 }
 </script>
