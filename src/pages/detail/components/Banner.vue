@@ -5,8 +5,7 @@
     <div class="banner-info">
         <div class="banner-title">{{this.sightName}}</div>
         <div class="banner-number">
-            <span class="iconfont">&#xe744;</span>
-            {{this.bannerImgs.length}}
+            共{{this.bannerImgs.length}}张
         </div>
     </div>
   </div>
@@ -69,6 +68,7 @@ export default {
   .banner-title {
    font-size: 1rem;
    padding:0 1rem;
+   color: white;
    flex: 1;
   }
   .banner-number {

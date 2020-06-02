@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="recommend-title">周末去哪儿</div>
+    <div class="recommend-title">精选文章</div>
     <ul>
         <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <div class="item-img-wrapper">

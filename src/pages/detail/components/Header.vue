@@ -7,7 +7,7 @@
         <router-link to="/">
        <div class="iconfont header-fixed-back">&#xe744;</div>
     </router-link>
-    景点详情
+    下拉出现！
     </div>
   </div>
 </template>

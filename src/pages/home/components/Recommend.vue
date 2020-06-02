@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="recommend-title">热销推荐</div>
+    <div class="recommend-title">热门快讯</div>
     <ul>
         <router-link
          tag="li"
@@ -67,7 +67,7 @@ export default {
     color: rgb(14, 0, 0);
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     overflow: hidden;
     background: #87CEEB;
 }
