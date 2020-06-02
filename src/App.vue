@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--<img src="./assets/logo.png">-->
-    <keep-alive>
+    <keep-alive exclude="Detail">
       <router-view/><!--显示的是当前路由地址对应的内容-->
     </keep-alive>
   </div>
