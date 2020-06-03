@@ -7,6 +7,9 @@
     <home-weekend :list="weekendList"></home-weekend>
     <home-lazy></home-lazy>
     <home-footer></home-footer>
+    <fade-animation>
+      <home-full></home-full>
+    </fade-animation>
     <!--<router-link to="/list">list</router-link>
     <div>home</div>-->
 </div>
@@ -20,6 +23,8 @@ import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import HomeFooter from './components/Footer'
 import HomeLazy from './components/Lazyimg'
+import HomeFull from './components/Full'
+import FadeAnimation from 'common/fade/FadeAnimation'
 import axios from 'axios'
 import { mapState } from 'vuex'
 export default {
@@ -31,7 +36,9 @@ export default {
     HomeRecommend,
     HomeWeekend,
     HomeFooter,
-    HomeLazy
+    HomeLazy,
+    HomeFull,
+    FadeAnimation
   },
   data () {
     return {

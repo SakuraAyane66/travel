@@ -2,7 +2,8 @@
 <div class="header">
   <el-backtop :bottom="10" :right="0"></el-backtop>
   <div class="header-left">
-      <div class="iconfont back-icon">&#xe744;</div>
+      <i class="el-icon-circle-plus-outline icon-top" @click="handleChange"></i>
+<!--       <div class="iconfont back-icon">&#xe744;</div> -->
   </div>
   <div class="header-input">
       <!-- <span class="iconfont">&#xe753;</span> -->
@@ -24,6 +25,11 @@ export default {
   name: 'HomeHeader',
   computed: {
     ...mapState(['city'])
+  },
+  methods: {
+    handleChange () {
+      this.$store.dispatch('changeFullwhite')
+    }
   }
 }
 </script>
@@ -31,6 +37,13 @@ export default {
 <style scoped>
   .iconfont{
     font-size: 1rem;
+    color: black;
+  }
+  .icon-top{
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    font-size: 2rem;
     color: black;
   }
   .back-icon{

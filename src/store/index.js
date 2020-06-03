@@ -13,11 +13,15 @@ try {
 }
 export default new Vuex.Store({
   state: {
-    city: defaultCity
+    city: defaultCity,
+    fullwhite: false
   },
   actions: {
     changeCity (ctx, city) {
       ctx.commit('changeCity', city)
+    },
+    changeFullwhite (clo) {
+      clo.commit('changeFullwhite')
     }
   },
   mutations: {
@@ -26,6 +30,9 @@ export default new Vuex.Store({
       try {
         localStorage.city = city
       } catch (e) {}
+    },
+    changeFullwhite (state) {
+      state.fullwhite = !state.fullwhite
     }
   }
 })
