@@ -5,6 +5,8 @@
     <home-icons :list="iconList"></home-icons>
     <home-recommend :list="recommendList"></home-recommend>
     <home-weekend :list="weekendList"></home-weekend>
+    <home-lazy></home-lazy>
+    <home-footer></home-footer>
     <!--<router-link to="/list">list</router-link>
     <div>home</div>-->
 </div>
@@ -16,6 +18,8 @@ import HomeSwiper from './components/swiper'
 import HomeIcons from './components/icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
+import HomeFooter from './components/Footer'
+import HomeLazy from './components/Lazyimg'
 import axios from 'axios'
 import { mapState } from 'vuex'
 export default {
@@ -25,7 +29,9 @@ export default {
     HomeSwiper,
     HomeIcons,
     HomeRecommend,
-    HomeWeekend
+    HomeWeekend,
+    HomeFooter,
+    HomeLazy
   },
   data () {
     return {

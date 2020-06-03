@@ -1,11 +1,12 @@
 <template>
 <div class="header">
+  <el-backtop :bottom="10" :right="0"></el-backtop>
   <div class="header-left">
       <div class="iconfont back-icon">&#xe744;</div>
   </div>
   <div class="header-input">
       <!-- <span class="iconfont">&#xe753;</span> -->
-      输入城市/景点/游玩主体
+      搜索功能暂时没有实现
       </div>
   <router-link to="/city">
   <div class="header-right">
