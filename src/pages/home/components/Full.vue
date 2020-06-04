@@ -32,9 +32,6 @@ html body .full {
   left:0;
   right:0;
   text-align: center;
-/*   height: 100%;
-  padding: 0;
-  margin: 0; */
   background: white;
 }
 .login {

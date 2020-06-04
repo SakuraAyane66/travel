@@ -4,7 +4,7 @@
     <ul>
         <li class="item border-bottom" v-for="item of list" :key="item.id">
                 <div class="item-img-wrapper">
-                <img class="item-img" :src='item.imgUrl' />
+                <img class="item-img" v-lazy='item.imgUrl' />
                 </div>
             <div class="item-info">
               <p class="item-title">{{item.title}}</p>
@@ -43,6 +43,7 @@ export default {
 }
 .item-img{
     width: 100%;
+    height: 40vw;
 }
 .item-info{
     padding: .1rem;
@@ -51,7 +52,7 @@ export default {
     margin-top: .50rem;
     line-height: .56rem;
     font-size: .8rem;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 .item-desc{

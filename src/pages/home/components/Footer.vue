@@ -6,7 +6,7 @@
     <p>学校:西南大学</p>
     <p>作者联系方式：809653361@qq.com</p>
   </div>
-  <div class="footer-line">
+  <div class="footer-line" v-show="footerShow">
     --我也是有底线的!!--<!-- 后续设置个数据动态绑定距离可能更好，z-index效果可能有瑕疵 -->
   </div>
 </div>
@@ -14,7 +14,8 @@
 
 <script>
 export default {
-  name: 'HomeFooter'
+  name: 'HomeFooter',
+  props: ['footerShow']
 }
 </script>
 

@@ -12,11 +12,17 @@ import store from './store'
 import 'swiper/css/swiper.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import VueLazyLoad from 'vue-lazyload'
 
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper /* { default options with global component } */)
+Vue.use(VueLazyLoad, {
+  preLoad: 1.3,
+  error: './static/fail.jpg',
+  loading: './static/loadding.gif'
+})
 
 /* eslint-disable no-new */
 new Vue({

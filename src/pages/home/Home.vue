@@ -6,7 +6,7 @@
     <home-recommend :list="recommendList"></home-recommend>
     <home-weekend :list="weekendList"></home-weekend>
     <home-lazy></home-lazy>
-    <home-footer></home-footer>
+    <home-footer :footerShow="footerShow"></home-footer>
     <fade-animation>
       <home-full></home-full>
     </fade-animation>
@@ -46,7 +46,8 @@ export default {
       swiperList: [],
       iconList: [],
       recommendList: [],
-      weekendList: []
+      weekendList: [],
+      footerShow: false
     }
   },
   computed: {
@@ -67,12 +68,25 @@ export default {
         this.weekendList = data.weekendList
       }
       /* console.log(res) */
+    },
+    handleScroll (e) {
+      var scrollTop = e.target.scrollTop
+      var windowHeight = e.target.clientHeight
+      var scrollHeight = e.target.scrollHeight
+      if (scrollTop + windowHeight === scrollHeight) {
+        this.footerShow = true
+      } else {
+        this.footerShow = false
+      }
     }
   },
   mounted () {
     this.lastCity = this.city
-    /* console.log('mounted') */
     this.getHomeInfo()
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  unmounted () {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   activated () {
     if (this.lastCity !== this.city) {
