@@ -1,5 +1,6 @@
 <template>
 <div>
+    <home-full></home-full>
     <home-header></home-header>
     <home-swiper :list="swiperList"></home-swiper>
     <home-icons :list="iconList"></home-icons>
@@ -7,9 +8,6 @@
     <home-weekend :list="weekendList"></home-weekend>
     <home-lazy></home-lazy>
     <home-footer :footerShow="footerShow"></home-footer>
-    <fade-animation>
-      <home-full></home-full>
-    </fade-animation>
     <!--<router-link to="/list">list</router-link>
     <div>home</div>-->
 </div>
@@ -51,6 +49,7 @@ export default {
     }
   },
   computed: {
+    /* 映射方法 */
     ...mapState(['city'])
   },
   methods: {
@@ -83,6 +82,7 @@ export default {
   mounted () {
     this.lastCity = this.city
     this.getHomeInfo()
+    /* window监听事件 */
     window.addEventListener('scroll', this.handleScroll)
   },
   unmounted () {

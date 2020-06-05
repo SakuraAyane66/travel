@@ -17,9 +17,11 @@ export default new Vuex.Store({
     fullwhite: false
   },
   actions: {
+    /* 改变city */
     changeCity (ctx, city) {
       ctx.commit('changeCity', city)
     },
+    /* 改变show */
     changeFullwhite (clo) {
       clo.commit('changeFullwhite')
     }

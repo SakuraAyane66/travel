@@ -25,14 +25,33 @@ export default {
 
 <style scoped>
 html body .full {
-  z-index: 2;
+  z-index: 100;
   position:fixed;
-  top: 0;
+/*top: 0;
   bottom:0;
   left:0;
-  right:0;
+  right:0; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* 渲染背景颜色 */
+  background: linear-gradient(135deg, #fff 0%, #fff 50%, #ffbdbd 58%, #ffccdd 66%, #fdffb2 74%, #c5e5ff 82%, #d6faff 90%, #d6ffee 100%);
+  background-position: 0% 0%;
+  /* 必须要在background后面才有效  */
+  background-size: 220% 220%;
   text-align: center;
-  background: white;
+  -moz-animation: loading 1.3s ease-out forwards;
+  -webkit-animation: loading 1.3s ease-out forwards;
+  animation: loading 1.3s ease-in-out forwards;
+  /* background: white; */
+}
+@keyframes loading{
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 .login {
   position: fixed;
