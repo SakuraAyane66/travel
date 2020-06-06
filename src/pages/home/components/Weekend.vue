@@ -2,15 +2,17 @@
   <div>
     <div class="recommend-title">精选文章</div>
     <ul>
-        <li class="item border-bottom" v-for="item of list" :key="item.id">
+        <router-link
+        tag="li" :to="'/content/' + item.id"
+        class="item border-bottom" v-for="item of list" :key="item.id">
                 <div class="item-img-wrapper">
-                <img class="item-img" v-lazy='item.imgUrl' />
+                <img class="item-img" v-lazy='item.imgUrl' alt="item.id" />
                 </div>
             <div class="item-info">
               <p class="item-title">{{item.title}}</p>
               <p class="item-desc">{{item.desc}}</p>
             </div>
-        </li>
+        </router-link>
     </ul>
   </div>
 </template>

@@ -59,13 +59,13 @@ html body .full {
   left: 40%;
 }
 .created {
-  margin: 0;
+  margin: 0 !important;
   position: fixed;
   top: 50%;
   left: 40%;
 }
 .think {
-  margin: 0;
+  margin: 0 !important;
   position: fixed;
   top: 60%;
   left: 40%;
