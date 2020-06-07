@@ -5,6 +5,7 @@ import List from '@/pages/list/List'
 import City from '@/pages/city/City'
 import Detail from '@/pages/detail/Detail'
 import Content from '@/pages/content/Content'
+import iconsDetail from '@/pages/iconsDetail/IconsDetail'
 
 Vue.use(Router)
 
@@ -30,6 +31,10 @@ export default new Router({
       path: '/content/:id',
       name: 'Content',
       component: Content
+    }, {
+      path: '/iconsDetail/:id',
+      name: 'iconsDetail',
+      component: iconsDetail
     }
   ],
   scrollBehavior (to, from, savedPosition) {

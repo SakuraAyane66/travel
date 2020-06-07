@@ -13,7 +13,8 @@
   <div class="header-right">
     <!-- {{this.$store.state.city}} -->
     {{this.city}}
-    <span class="iconfont">&#xe74e;</span>
+    <!-- <span class="iconfont">&#xe74e;</span> -->
+    <i class="el-icon-arrow-down"></i>
   </div>
   </router-link>
 </div>

@@ -1,7 +1,14 @@
 <template>
   <div class="wrapper">
   <swiper :options="swiperOptions" v-if="showSwiper">
-    <swiper-slide v-for="item of list" :key="item.id"><img class="swiper-img" :src="item.imgUrl" /></swiper-slide>
+    <swiper-slide v-for="item of list" :key="item.id">
+      <img class="swiper-img" :src="item.imgUrl" />
+      <!-- <el-image 预览功能失败了
+        style="width: 100%; height: 100px"
+        :src="item.imgUrl"
+        :preview-src-list="srcList">
+      </el-image> -->
+    </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
   </div>
@@ -30,7 +37,8 @@ export default {
 
 <style scoped>
   .swiper-img{
-    width:100%
+    width: 100%;
+    height: 120px;
   }
   .wrapper{
     overflow: hidden;
