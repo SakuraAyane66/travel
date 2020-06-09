@@ -17,7 +17,7 @@ export default {
 .content {
   margin-top: .2rem;
   font-size: 1.4rem;
-  background: cyan;
+/*   background: cyan; */
   text-indent: 32px;
   overflow: hidden;
 }
