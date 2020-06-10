@@ -10,7 +10,7 @@
       </router-link>
     我又出现啦!
   </div>
-  <!--<div class="header">{{this.title}}</div> 内容-->
+  <div class="header">{{this.title}}</div> <!--内容-->
 </div>
 </template>
 
@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .header {
-  margin-top: .2rem;
+  margin-top: .6rem;
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
