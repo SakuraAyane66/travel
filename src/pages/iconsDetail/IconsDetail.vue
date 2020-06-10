@@ -1,14 +1,15 @@
 <template>
 <div>
-  <content-header :title="title"></content-header>
+   <icon-top :title="title"></icon-top>
   <div>
-    iconsDetail
+    <icon-list></icon-list>
   </div>
 </div>
 </template>
 
 <script>
-import ContentHeader from '../content/components/Header'
+import IconList from './components/List'
+import IconTop from './components/Top'
 export default {
   name: 'iconsDetail',
   data () {
@@ -17,7 +18,8 @@ export default {
     }
   },
   components: {
-    ContentHeader
+    IconTop,
+    IconList
   }
 }
 </script>
