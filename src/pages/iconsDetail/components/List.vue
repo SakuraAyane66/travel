@@ -1,11 +1,11 @@
 <template>
 <div class="heng">
   <div class="box"  v-for="item in itemlist" :key="item.id" @click="handleBannerClick">
-    <!-- <img class="img" v-lazy="item.imgUrl" /> --> 
+    <!-- <img class="img" v-lazy="item.imgUrl" /> -->
     <!-- 大图预览 -->
-    <el-image 
+    <el-image
     style="width: 100%; height: 100%"
-    :src="item.imgUrl" 
+    :src="item.imgUrl"
     :preview-src-list="test">
    </el-image>
     <!-- <fade-animation>
@@ -35,7 +35,7 @@ export default {
   data () {
     return {
       showGallary: false,
-      test: ['http://www.skydragon.vip/img/2.jpg','http://www.skydragon.vip/img/12.JPG'],
+      test: ['http://www.skydragon.vip/img/2.jpg', 'http://www.skydragon.vip/img/12.JPG'],
       /* imgUrl: 'http://www.skydragon.vip/img/2.jpg', */
       id: 1,
       author: 'Sakura',

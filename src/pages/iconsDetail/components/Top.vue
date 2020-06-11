@@ -80,6 +80,7 @@ export default {
   color: #fff;
   background: black;
   font-size: 1rem;
+  z-index: 1;
 }
 .header-fixed-back {
   position: absolute;

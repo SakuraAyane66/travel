@@ -1,8 +1,11 @@
 <template>
 <div>
-   <icon-top :title="title"></icon-top>
+  <icon-top :title="title"></icon-top> <!-- 头部内容 -->
   <div>
-    <icon-list></icon-list>
+    <icon-list></icon-list><!-- 图片循环和预览 -->
+  </div>
+  <div class="tbtset">
+    <test></test> <!-- 图表测试 -->
   </div>
 </div>
 </template>
@@ -10,6 +13,7 @@
 <script>
 import IconList from './components/List'
 import IconTop from './components/Top'
+import Test from './components/Hello'
 export default {
   name: 'iconsDetail',
   data () {
@@ -19,11 +23,13 @@ export default {
   },
   components: {
     IconTop,
-    IconList
+    IconList,
+    Test
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+.tbtset {
+}
 </style>

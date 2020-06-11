@@ -13,7 +13,9 @@ import 'swiper/css/swiper.css'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import VueLazyLoad from 'vue-lazyload'
+import echarts from 'echarts'/* 全部引入体积过大，按需引入 */
 
+Vue.prototype.$echarts = echarts
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 fastClick.attach(document.body)
